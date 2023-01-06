@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+                'blue':'#00008B',
+                'red':'#8B0000',
+                'yellow':'#FFFFE0',
+                'green':'#013220',
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body class="">
+    
+
+    <div class="h-[100vh] flex justify-center items-center">
+        <div class="overflow-hidden  h-[30rem] w-[30rem] bg-black grid grid-cols-2 grid-rows-2 gap-[10px] rounded-[50%] border-[10px] relative border-black">
+            <div class="absolute h-[150px] w-[150px] bg-white z-[15] flex justify-center items-center top-[34%] left-[34%] rounded-[50%] border-black border-[10px]">
+                <button id="start" onclick="main()" class="border-none bg-sky-400 py-[5px] px-[8px] rounded-xl hover:opacity-[0.7]">
+                    Start
+                </button>
+
+
+            </div>
+            <button id="green" abc="g" class="overflow-visible bg-[green] opacity-[0.4] hover:opacity-[0.7] active:opacity-[1]"></button>
+            <button id="red" abc="r" class="bg-[red]  opacity-[0.4] hover:opacity-[0.7] active:opacity-[1]"></button>
+            <button id="yellow" abc="y" class="bg-[yellow]  opacity-[0.4] hover:opacity-[0.7] active:opacity-[1]"></button>
+            <button id="blue" abc="b" class="bg-[blue]  opacity-[0.4] hover:opacity-[0.7] active:opacity-[1]"></button>
+        </div>
+    </div>
+
+
+
+<script src="main.js"></script>
+</body>
+</html>
