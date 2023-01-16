@@ -1,7 +1,7 @@
 
 
 
-const colors = ['g','r','y','b'];
+const colors = ['g','r','y','b','g','r','y','b','g','r','y','b'];
 const start = document.querySelector("#start");
 const stopbtn = document.querySelector("#stop");
 computerclor = new Array();
@@ -22,6 +22,14 @@ function creatcolor(list){
 
 
 
+function falsetry(){
+    console.log('false');
+    start.textContent = 'Try Again'
+    computerclor = []  
+}
+
+
+
 
     document.querySelector("#green").addEventListener("click",()=>{
         if (computerclor[flash2] === 'g'){
@@ -35,9 +43,7 @@ function creatcolor(list){
             }
         }
         else{
-            console.log('false');
-            start.textContent = 'Try Again'
-            computerclor = []           
+         falsetry()
         }
     });
     document.querySelector("#red").addEventListener("click",()=>{
@@ -51,10 +57,8 @@ function creatcolor(list){
             }
         }
         else{
-            console.log('false');
-            start.textContent = 'Try Again'
-            computerclor = []            
-
+         
+            falsetry()
 
         }
     });
@@ -69,9 +73,7 @@ function creatcolor(list){
             }
         }
         else{
-            console.log('false');
-            start.textContent = 'Try Again'
-            computerclor = []            
+            falsetry()
 
 
         }
@@ -87,9 +89,7 @@ function creatcolor(list){
             }
         }
         else{
-            console.log('false');
-            start.textContent = 'Try Again'
-            computerclor = []            
+            falsetry()
 
         }
     });
